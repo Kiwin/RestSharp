@@ -156,7 +156,7 @@ It would be similar to using typed clients using `HttpClient`, for example:
 
 ```csharp
 public class GitHubClient {
-    readonly RestClient _client;
+    readonly IRestClient _client;
 
     public GitHubClient() {
         _client = new RestClient("https://api.github.com/")
